@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #FAFAFA;
+    color: #262626;
+    font-size: 17px;
+    line-height: 21px;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 935px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header {
+    height: 54px;
+    border-bottom: 1px solid #DBDBDB;
+    background: #fff;
+}
+
+.logo {
+    margin-top: 16px;
+    float: left;
+}
+
+.search {
+    width: 215px;
+    height: 29px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-left: 257px;
+    float: left;
+    margin-top: 12px;
+    background: url(img/search.png) no-repeat 5px center;
+    padding-left: 20px;
+    color: #8F8F8F;
+}
+
+.links {
+    padding-top: 16px;
+    float: right;
+}
+
+.links a {
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 22px;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+.home {
+    background: url(img/home.png) left center no-repeat;
+}
+
+.messages {
+    position: relative;
+    background: url(img/messages.png) left center no-repeat;
+}
+
+.messages span {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 18px;
+    height: 18px;
+    background: #DC565B;
+    border-radius: 50%;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 18px;
+}
+
+.compass {
+    background: url(img/compass.png) left center no-repeat;
+}
+
+.heart {
+    background: url(img/heart.png) left center no-repeat;
+}
+
+.profile {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Account info */
+
+.account {
+    margin-top: 29px;
+}
+
+.account__left {
+    float: left;
+}
+
+.account__right {
+    width: 673px;
+    float: right;
+}
+
+.account__left img{
+    margin-left: 69px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.account button {
+    height: 28px;
+    background: #4094EF;
+    border-radius: 3px;
+    border: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btn-follow {
+    width: 96px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.btn-more {
+    width: 33px;;
+}
+
+.btn-more::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #fff;
+    border-bottom: 0;
+    position: relative;
+    top: -3px;
+}
+
+.account .btn-info {
+    background: transparent;
+    margin-left: 5px;
+}
+
+.btn-info span {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #262626;
+    position: relative;
+    top: -3px;
+}
+
+.stats {
+    margin: 21px 0;
+}
+
+.account-stat {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    float: left;
+    margin-right: 39px;
+}
+
+.account-stat:last-child {
+    margin-right: 0;
+}
+
+.user-name-small {
+    font-weight: bold;
+}
+
+.user-link {
+    color: #133768;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Stories */
+
+.stories {
+    margin: 55px 0;
+}
+
+.stories .container {
+    padding: 0 40px;
+}
+
+.story {
+    float: left;
+    margin-right: 55px;
+}
+
+.story:last-child {
+    margin-right: 0;
+}
+
+.story img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 86px;
+    height: 86px;
+    display: block;
+    border: 1px solid #DBDBDB;
+    padding: 4px;
+}
+
+.story figcaption {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #262626;
+}
+
+/* Feed styles */
+
+.feed .container {
+    border-top: 1px solid #DBDBDB;
+}
+
+.toolbar {
+    text-align: center;
+    position: relative;
+    top: -1px;
+}
+
+.toolbar button {
+    margin-right: 20px;
+}
+
+.toolbar button:last-child {
+    margin-right: 0;
+}
+
+.btn-posts,
+.btn-tagged {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    color: #8F8F8F;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-top: 1px solid #8F8F8F;
+    padding-top: 18px;
+}
+
+.btn-posts {
+    padding-left: 20px;
+    background:url(img/grid.png) no-repeat left 19px;
+}
+
+.btn-tagged {
+    padding-left: 16px;
+    background:url(img/profile.png) no-repeat left 18px;
+}
+
+.btn-posts.active,
+.btn-tagged.active {
+    color: #262626;
+}
+
+.feed-list img {
+    float: left;
+    margin: 25px 25px 0 0;
+}
+
+.feed-list img:nth-child(3n) {
+    margin-right: 0;
+}
